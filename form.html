@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+          text-transform: uppercase;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        BODY{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          MARGIN:20PX 30PX;
+      }
+      .CONTAINER{
+        background-color: bisque ;
+        PADDING:30PX;
+        BORDER: 3px SOLID BLACK;
+        border-radius: 10PX;
+      }
+      INPUT[TYPE="TEXT"],
+      INPUT[TYPE="EMAIL"],
+      INPUT[TYPE="NUMBER"],
+      INPUT[TYPE="PASSWORD"],
+      INPUT[TYPE="DATE"],
+      
+      TEXTAREA {
+        WIDTH:100%;
+        PADDING:12PX;
+        BORDER:2PX SOLID BLACK;
+        border-radius: 5PX;
+      }
+      .MAIN{
+        text-align: center;
+      }
+     INPUT[TYPE="SUBMIT"],
+     INPUT[TYPe="RESET"]{
+        border-radius: 7px;
+       
+       padding: 5px;
+CURSOR:POINTER;
+
+      }
+      input[type="submit"]{
+        margin-right: 10px;
+      }
+      input[type="TEXT"],input[type="EMAIL"],input[type="NUMBER"]{
+        margin-TOP: 10px;
+      }
+      
+     
+
+
+    </style>
+    <script>
+      /*function message(){
+      alert('your data is submitted');
+      }*/
+      function validation(){
+        let namme=document.getElementById("name");
+        let numb=document.getElementById("NUMBER");
+        let pincode=document.getElementById("pin");
+        let addd=document.getElementById("ADDRESS");
+        if(namme.value==""){
+          alert("NAME field cannot be empty");
+        }
+        else if(namme.value.length<3){
+          alert("Name cannot be less than 3 letters");
+        }
+        else if(numb.value.length<10){
+          alert("Invalid Mobile Number");
+        }
+        else if(numb.value.length>10){
+          alert("Invalid Mobile Number");
+        }
+
+        else if(pincode.value.length<6){
+          alert("Invalid Pin Code");
+        }
+        else if(pincode.value.length>6){
+          alert("Invalid Pin Code");
+        }
+        else{
+          alert("Thankyou For Your Feedback")
+        }
+      }
+  </script>
+</head>
+<body>
+  <DIV CLASS="CONTAINER"> 
+    <form action="project_php.php" onsubmit="return validation()" method="post">
+    <h2 CLASS="MAIN"><b>FEEDBACK</b></h2>
+    <hr>
+    
+    <h4>NAME*:<INPUT TYPE="TEXT" id="name" name="name" PLACEHOLDER=" ENTER NAME" required></h4>
+    
+            <H4>EMAIL*:<INPUT TYPE="EMAIL" NAME="EMAIL" ID="EMAIL" PLACEHOLDER="abc@xyz.com" required></H4>
+            <H4>PHONE NUMBER*:<INPUT TYPE="text" NAME="NUMBER" ID="NUMBER" PLACEHOLDER="ENTER HERE" required/></H4>
+            <H4>CITY*:<INPUT TYPE="TEXT" NAME="CITY" ID="CITY" PLACEHOLDER="CITY" required/></H4>
+            <H4>PINCODE*:<input TYPE="TEXT" NAME="PIN" id="pin" PLACEHOLDER="335001"required> </H4>
+        </FIELDSET>
+        <P><H4>
+        FEEDBACK:</H4></P>
+        <textarea COLS="62" ROWS="10" PLACEHOLDER="ENTER YOUR FEEDBACK IN DETAIL" NAME="feed" ID="ADDRESS"required></textarea></P>
+        
+       
+        <input TYPE="submit" NAME="submit" TARGET="_BLANK" onclick="message()">
+            
+        <INPUT TYPE="RESET" NAME="PAY" >
+</form>  
+
+</DIV>
+
+</body>
+</html>

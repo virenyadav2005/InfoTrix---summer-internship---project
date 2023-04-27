@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>group project</title>
+        <style>
+            body{
+                background:black;
+                margin: 0;
+                padding: 0;
+            }
+            .header{
+                width:100%;
+                height:225px;
+                border:px solid rgb(57, 51, 146);
+                border-radius:4%;
+                background-image:url("https://drive.google.com/uc?id=1uJGsElDqGfVWvMSvA9hRCtF31qmMr_YK");
+                background-size:80% 90%;
+                background-color: rgb(231, 245, 243);
+            }
+            .navigation{
+                width:100%;
+                height:225px;
+                background-color: rgb(182, 52, 19);
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                border-bottom-left-radius: 3%;
+                border-top-left-radius: 3%;
+                border-top-right-radius: 3%;
+            }
+            
+            .middle{
+                width:100%;
+                height: fit-content;
+            }
+            .footer{
+                width:98.8%;
+                height:150px;
+                border:9px solid rgb(92, 48, 48);
+                border-radius:1%;
+                background-image: url("");
+                background-color: rgb(249, 251, 255);
+            }
+            .part1{
+                float:left;
+                margin:10px 2% 20px 2%;
+                width:65%;
+                height:95%;
+                border:9px solid rgb(92, 48, 48);
+                border-radius:1%;
+            }
+            .part2{
+                float:right;
+                margin:0px 0% 0px 2%;
+                width:25%;
+                height:96.3%;
+                background-color: rgb(146, 51, 51);
+                border-bottom-right-radius: 3%;
+                border-bottom-LEFT-radius: 3%;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+             }
+            .topnews{
+                border:5px inset #9e5351;
+                font-size:x-large;
+                float:left;
+                width: 80%;
+                height:30%;
+                margin:2% 9%;
+                border-radius: 6%;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                background-color:rgba(248, 236, 236, 0.993);
+                font-style:bold;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .trend{
+                border:5px inset #9e5351;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                float:left;
+                width: 80%;
+                height:58%;
+                margin:2% 9%;
+                background-color:rgba(248, 236, 236, 0.993);
+                border-radius: 2%;
+            }
+            .stock{
+                border:px solid black;
+                float:left;
+                width: 45%;
+                height:90%;
+                margin:2% 1% 2% 2%;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                overflow-y: scroll;
+                overflow-x: scroll;
+                background-color: azure;
+                border-radius:5%;
+            }
+                tr:nth-child(even) {
+            background-color: Lightgreen;
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(185, 231, 185);
+        }
+            
+            .astronomy{
+                float:left;
+                width: 45%;
+                height:90%;
+                margin:2% 1%;
+                border-radius: 5%;
+                background-color: black;
+                color: azure;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Laser_Towards_Milky_Ways_Centre.jpg/220px-Laser_Towards_Milky_Ways_Centre.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .astronomy:hover{
+                transform:scale(110%);
+            }
+            .nav{
+                border:3px solid rgb(129, 76, 76);
+                float:left;
+                width:15%;
+                height:80%;
+                margin:1% 0% 1.5% 3%;
+                border-radius: 90%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+            .nav:hover{
+                transform: scale(1.2);
+            }
+            .navim{
+                height:100%;
+                border-radius: 100%;
+                width:100%;
+            }
+            li{
+                width:70%;
+            }
+            .frame{
+                margin:30% 0% 0% 9%;
+                height:15%;
+                width:80%;
+                border:8px inset #9e5351;
+                background-color:#B8860B;
+                border-radius: 3%;
+            }
+            .com{
+                width:97.8%;
+                height:13%;
+                margin-top: 3px;
+                font-size:10vw;
+                font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                background-color: black;
+                color:rgba(178, 255, 62, 0.909);
+                border-radius: 40px;
+                border:8px solid ;
+            }
+            .framei{
+                margin:3% 0% 0% 6%;
+                height:85%;
+                width:85%;
+                border:px solid black;
+                border-radius: 15%;
+            }
+            .framei:hover{
+                transform: scale(1.2);
+            }
+            legend{
+                color:black;
+            }
+            .footer1{
+                border: 2px solid rgb(151, 86, 86);
+                width:45%;
+                height:80%;
+                float:left;
+                margin:1% 2%;
+                background-color: rgba(243, 220, 220, 0.993);
+                border-radius:10%;
+            }
+            .footer2{
+                border: 2px solid rgb(146, 90, 90);
+                width:45%;
+                height:80%;
+                float:left;
+                margin:1% 2%;
+                background-color: rgba(243, 220, 220, 0.993);
+                border-radius: 10%;
+            }
+            .dataTable a{
+                text-decoration: none;
+                color:black;
+            }
+            .box1{
+                margin-top: 30px;
+                height:800px;
+            }
+            .box2{
+                margin-top: 40px;
+                height:800px;
+            }
+            .box3{
+                margin-top: 40px;
+                height:800px;
+            }
+            .box4{
+                margin-top: 40px;
+                height:800px;
+            }
+            .circle{
+                border:6px solid rgb(191, 48, 226);
+                height:43%;
+                width:25%;
+                border-radius: 100%;
+                color:white;
+                text-align: center;
+                
+            }
+            .square{
+                border:2px solid white;
+                color:white;
+                float:right;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+            .circle1{
+                border:6px solid rgb(191, 48, 226);
+                height:43%;
+                width:25%;
+                border-radius: 100%;
+                margin: 0% 10% 0 10%;
+                color:white;
+                float: right;
+            }
+            .square1{
+                border:2px solid white;
+                color:white;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+            hr{
+                color: rgb(255, 255, 255);
+            }
+            @media screen and (max-width:780px)  {
+                .navigation{
+                width:100%;
+                height:170px;
+                background-color: rgb(182, 52, 19);
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                border-bottom-left-radius: 3%;
+                border-top-left-radius: 3%;
+                border-top-right-radius: 3%;
+            }
+                .nav{
+                border:3px solid rgb(129, 76, 76);
+                float:left;
+                width:15%;
+                height:65%;
+                margin:3% 0% 1.5% 3%;
+                border-radius: 90%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+            .header{
+                width:100%;
+                height:150px;
+                border:px solid rgb(146, 51, 51);
+                border-radius:4%;
+                background-image:url("https://drive.google.com/uc?id=1uJGsElDqGfVWvMSvA9hRCtF31qmMr_YK");
+                background-size:80% 90%;
+                background-color: rgb(231, 245, 243);
+            }
+            .footer{
+                width:97.8%;
+                height:150px;
+                border:9px solid rgb(92, 48, 48);
+                border-radius:1%;
+                background-image: url("");
+                background-color: rgb(249, 251, 255);
+            }
+            .box1{
+                margin-top: 30px;
+                height:500px;
+            }
+            .box2{
+                margin-top: 40px;
+                height:500px;
+            }
+            .box3{
+                margin-top: 40px;
+                height:600px;
+            }
+            .box4{
+                margin-top: 40px;
+                height:550px;
+            }
+            .circle{
+                border:6px solid rgb(191, 48, 226);
+                height:35%;
+                width:25%;
+                border-radius: 100%;
+                color:white;
+                text-align: center;
+                
+            }
+            .square{
+                border:2px solid white;
+                color:white;
+                float:right;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+            .circle1{
+                border:6px solid rgb(191, 48, 226);
+                height:35%;
+                width:25%;
+                border-radius: 100%;
+                margin: 0% 10% 0 10%;
+                color:white;
+                float: right;
+            }
+            .square1{
+                border:2px solid white;
+                color:white;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+                
+            }
+            @media screen and (min-width:780px) and (max-width:980px) {
+                .navigation{
+                width:100%;
+                height:180px;
+                background-color: rgb(182, 52, 19);
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                border-bottom-left-radius: 3%;
+                border-top-left-radius: 3%;
+                border-top-right-radius: 3%;
+            }
+                .nav{
+                border:3px solid rgb(129, 76, 76);
+                float:left;
+                width:15%;
+                height:70%;
+                margin:2% 0% 1.5% 3%;
+                border-radius: 90%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+            .header{
+                width:100%;
+                height:180px;
+                border:px solid rgb(146, 51, 51);
+                border-radius:4%;
+                background-image:url("https://drive.google.com/uc?id=1uJGsElDqGfVWvMSvA9hRCtF31qmMr_YK");
+                background-size:80% 90%;
+                background-color: rgb(231, 245, 243);
+            }
+            .footer{
+                width:97.8%;
+                height:150px;
+                border:9px solid rgb(92, 48, 48);
+                border-radius:1%;
+                background-image: url("");
+                background-color: rgb(249, 251, 255);
+            }
+            .box1{
+                margin-top: 30px;
+                height:700px;
+            }
+            .box2{
+                margin-top: 40px;
+                height:500px;
+            }
+            .box3{
+                margin-top: 40px;
+                height:600px;
+            }
+            .box4{
+                margin-top: 40px;
+                height:550px;
+            }
+            .circle{
+                border:6px solid rgb(191, 48, 226);
+                height:35%;
+                width:25%;
+                border-radius: 100%;
+                color:white;
+                text-align: center;
+                
+            }
+            .square{
+                border:2px solid white;
+                color:white;
+                float:right;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+            .circle1{
+                border:6px solid rgb(191, 48, 226);
+                height:35%;
+                width:25%;
+                border-radius: 100%;
+                margin: 0% 10% 0 10%;
+                color:white;
+                float: right;
+            }
+            .square1{
+                border:2px solid white;
+                color:white;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }    
+            }
+            @media screen and (min-width:980px) and (max-width:1080px) {
+                .navigation{
+                width:100%;
+                height:210px;
+                background-color: rgb(182, 52, 19);
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                border-bottom-left-radius: 3%;
+                border-top-left-radius: 3%;
+                border-top-right-radius: 3%;
+            }
+                .nav{
+                border:3px solid rgb(129, 76, 76);
+                float:left;
+                width:15%;
+                height:70%;
+                margin:2% 0% 1.5% 3%;
+                border-radius: 90%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+            .header{
+                width:100%;
+                height:200px;
+                border:px solid rgb(146, 51, 51);
+                border-radius:4%;
+                background-image:url("https://drive.google.com/uc?id=1uJGsElDqGfVWvMSvA9hRCtF31qmMr_YK");
+                background-size:80% 90%;
+                background-color: rgb(231, 245, 243);
+            }
+            .footer{
+                width:97.9%;
+                height:150px;
+                border:9px solid rgb(92, 48, 48);
+                border-radius:1%;
+                background-image: url("");
+                background-color: rgb(249, 251, 255);
+            }
+            .box1{
+                margin-top: 30px;
+                height:800px;
+            }
+            .box2{
+                margin-top: 40px;
+                height:500px;
+            }
+            .box3{
+                margin-top: 40px;
+                height:600px;
+            }
+            .box4{
+                margin-top: 40px;
+                height:550px;
+            }
+            .circle{
+                border:6px solid rgb(191, 48, 226);
+                height:30%;
+                width:25%;
+                border-radius: 100%;
+                color:white;
+                text-align: center;
+                
+            }
+            .square{
+                border:2px solid white;
+                color:white;
+                float:right;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+            .circle1{
+                border:6px solid rgb(191, 48, 226);
+                height:40%;
+                width:25%;
+                border-radius: 100%;
+                margin: 0% 10% 0 10%;
+                color:white;
+                float: right;
+            }
+            .square1{
+                border:2px solid white;
+                color:white;
+                width:74%;
+                height:fit-content;
+                margin-right:5px;
+                border-top-right-radius: 40px ;
+                border-bottom-left-radius: 40px ;
+                padding:2%;
+            }
+            
+        }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div style="width:50%;height:60%;
+            float:left;
+            margin:0 0% 5% 27%;
+            border:px solid rgb(31, 24, 24);
+            border-radius: 20%; font-size:11vw;
+             font-family:luminari,fantasy; 
+             text-shadow:1px 0px 1px #ccc, 0px 1px 1px #eee, 
+            2px 1px 1px #ccc, 1px 2px 1px #eee,
+            3px 2px 1px #ccc, 2px 3px 1px #eee,
+            4px 3px 1px #ccc, 3px 4px 1px #eee,
+            5px 4px 1px #ccc, 4px 5px 1px #eee,
+            6px 5px 1px #ccc, 5px 6px 1px #eee,
+            7px 6px 1px #ccc;">
+               <font color="#C34A2C">INFO</font><font color="black"><sup>trix</sup></font>
+            <!--img src="" style="repeat:no-repeat;width:100%;height:100%;border-radius: 20%;">-->
+
+        </div>
+        </div>
+        <div class="navigation">
+            <div class="nav">
+                <abbr title="Home"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKwfxn3K3ulQ-WU-A-dx4_DbXmCzHyzmaug&usqp=CAU" class="navim"></a></abbr>
+            </div>
+                <div class="nav">
+                    <abbr title="Technology"><a href="technology.html"><img src="https://mechomotive.com/wp-content/uploads/2021/07/Modren-Tech.jpg" class="navim"></a></abbr>
+                </div>
+                <div class="nav">
+                    <abbr title="Sports"><a href="sportsmain.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUkmy4KvaHOCzTQ2FZPb7zR6RPdmaHwoS9w&usqp=CAU" class="navim"></a></abbr>
+                </div>
+                <div class="nav">
+                    <abbr title="Politics"><a href="politicalface.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFc2GcCY-1k0hc-Dx0xS1KaEnQRdC24M4nfw&usqp=CAU" class="navim"></a></abbr>
+                </div>
+                <div class="nav">
+                    <abbr title="Business"><a href="business.html"><img src="data:image/jpeg;base64,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" class="navim"></a></abbr>
+                </div>
+        </div>
+        
+        <div class="middle">
+            <div class="com">The TECH Matrix</div>
+        
+            <div class="box1">
+                <div class="circle">
+                    <p style="margin-top: 30%;font-size: 5vw;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>Emerging <br>TECH</b></p>
+                </div>
+                <div class="square">
+                    <p style="font-size: 3vw;">Apple’s New iPhone 14 to Show India Closing Tech Gap With China:</p>
+                    Apple Inc. plans to begin manufacturing the iPhone 14 in India about two months after the product’s initial release out of China, narrowing the gap between the two countries but not closing it completely as some had anticipated. 
+<br><br>
+The company has been working with suppliers to ramp up manufacturing in India and shorten the lag in production of the new iPhone from the typical six to nine months for previous launches, according to people familiar with the matter. Apple, which long made most of its iPhones in China, is seeking alternatives as Xi Jinping’s administration clashes with the US government and imposes lockdowns across the country that have disrupted economic activity.
+                </div>
+            </div>
+            <hr>
+            <div class="box2">
+                
+                <div class="square1">
+                    <p style="font-size: 3vw;">Indian Army Set to Possess Quantum Communication Technology</p>
+                    India is all set to join the elite global club, and the Indian Army will soon possess indigenous and more advanced quantum communication technology with equipped troops and a high-end secured defense system. With the support of Innovation for Defence Excellence (iDEX), Defence Innovation Organisation, the QNu Labs which is a Bengaluru-based deep tech startup has innovated advanced secured communication through Quantum Key Distribution (QKD). The Defence Ministry has initiated the procurement process of QNu Labs developed QKD systems by issuing a commercial Request for Proposal (REF) after the successful trials.
+                </div>
+                <div class="circle1" style="border:6px solid orange">
+                    <p style="margin-top: 20%;font-size: 5vw;margin-left:27%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>TECH in Army</p>
+                
+                </div>
+            </div>
+            <hr>
+            <div class="box3">
+                <div class="circle" style="height:40%;border:6px solid rgba(0, 102, 255, 0.804);">
+                    <p style="margin-top: 30%;font-size: 5vw;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>TECH<br> War</b></p>
+                
+                </div>
+                <div class="square">
+                    <p style="font-size: 3vw;">Tech war: South Korean trade group calls for chip diversification from China as Seoul mulls joining US-led semiconductor alliance</p>
+                    A trade group in South Korea has called for the diversification of trading partners in chips after Seoul’s reliance on China as a semiconductor export market jumped nearly 13-fold over the last two decades.
+                    <br><br>
+                    China accounted for 39.7 per cent of all South Korean semiconductor exports in 2021, up from 3.2 per cent in 2000, according to an article by The Korea Herald on Sunday, citing research published by the Korea Chamber of Commerce and Industry (KCCI), which represents 300 local companies including memory chip giants Samsung Electronics and SK Hynix.
+                    <br><br>
+                    The Seoul-based trade group cited the risks of increasing dependency on China, warning that it would badly hurt South Korean industry when the manufacturing skills gap between the two countries narrows.
+                </div>
+            </div>
+            <hr>
+            <div class="box4">
+                
+                <div class="square1">
+                    <p style="font-size:5vh;margin:0;"><b>SHALU:</b></p>
+                    <p>The humanoid Robot comes equipped with numerous features such as Face recognition (remembering the person after the meeting), identifying multiple everyday objects (capable of identifying many things available around us such as a computer, laptop, TV, mobile, bottle, book), reading news and horoscope, and solving a math problem. Anuncios Interestingly, 'Shalu' also tells jokes and does standup on demand. She can also answer educational questions based on Physics, Chemistry, Math, History, Geography, GK, etc., which students usually ask during their study in the classroom.</p>
+                </div>
+                <div class="circle1" style="border:6px solid rgb(179, 121, 121);">
+                    <p style="margin-top: 30%;font-size: 4vw;margin-left:7%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>First <br>HUMANOID</b></p>
+                    
+                </div>
+            </div>
+    </div>
+        <div class="footer">
+            <div class="footer1">
+                <p style="margin:2% 25%;font-size:large;">CONTACT US:<br>MO.01414XXXXX<br>E-MAIL:<br>
+                    info@infotrix.com<br><a href="#top" style="text-decoration:none;">GO TO TOP</a></p>
+            </div>
+            <div class="footer2">
+                <a href="form.html" target="_blank">
+                 <!--   for local host
+                <a href="http://localhost/form.html">
+                -->
+                <img src="feedback.png" style="width:100%;height:100%;">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
